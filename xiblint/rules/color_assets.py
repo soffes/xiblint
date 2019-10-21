@@ -68,7 +68,6 @@ class ColorAssets(Rule):
             color = (float(red), float(green), float(blue), float(alpha))
 
             if not self._compare_colors(color, expected_color):
-                print(color, expected_color)
                 context.error(
                     element,
                     "Color value for '{}' does not match asset catalog.".format(name),
